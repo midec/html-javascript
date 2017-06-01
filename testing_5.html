@@ -9,7 +9,7 @@ var choice2 = document.getElementById("healthy").checked;
 
 if((choice1=="")&&(choice2==""))
 {
-alert("choose at least one box");
+alert("you must select a box");
 return false;
 }
 if((choice1)&&(choice2))
@@ -54,7 +54,7 @@ return true;
 </script>
 
 <body align="center">
-<p>Are you Sick as Hell?</p>
+<p>Are you Sick?</p>
 <form name="myForm" onsubmit="return validate()"
 action="http://www.google.com">
 <input type="checkbox" id="sick">Sick
