@@ -1,0 +1,88 @@
+<html>
+<head>
+</head>
+
+<script>
+function validate(){
+var choice1 = document.getElementById("sick").checked;
+var choice2 = document.getElementById("healthy").checked;
+
+if((choice1=="")&&(choice2==""))
+{
+alert("choose at least one box");
+return false;
+}
+if((choice1)&&(choice2))
+{
+alert("choose only one box");
+return false;
+}
+if((choice1)&&!choice2)
+{
+window.open ("http://www.yahoo.com");
+return false;
+}
+if(!choice1&&(choice2))
+{
+window.open ("http://www.cnn.com");
+return false;
+}
+return true;
+}
+
+function dropdown(){
+var sexy = document.getElementById("pain").value;
+
+if(sexy==0)
+{
+alert("Please choose a level");
+return false;
+}
+if((sexy>0)&&(sexy<6))
+{
+alert("Non-Urgent");
+return false;
+}
+if((sexy>5)&&(sexy<11))
+{
+alert("Urgent");
+return false;
+}
+return true;
+}
+
+</script>
+
+<body align="center">
+<p>Are you Sick as Hell?</p>
+<form name="myForm" onsubmit="return validate()"
+action="http://www.google.com">
+<input type="checkbox" id="sick">Sick
+<input type="checkbox" id="healthy">Healthy
+<input type="submit" value="Submit"/>
+
+
+</form>
+
+<form name="myForm2" onsubmit="return dropdown()" action="http://www.facebook.com">
+<p>What is your level of Pain?</p><br>
+Select level of Pain:
+<select id="pain">
+	<option value=0></option>
+	<option value=1>1</option>
+	<option value=2>2</option>
+	<option value=3>3</option>
+	<option value=4>4</option>
+	<option value=5>5</option>
+	<option value=6>6</option>
+	<option value=7>7</option>
+	<option value=8>8</option>
+	<option value=9>9</option>
+	<option value=10>10</option>
+	<input type="submit" value="Submit"/>
+
+	
+</form>
+
+</body>
+</html>

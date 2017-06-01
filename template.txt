@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>Hello World</title>
+	</head>
+
+	<body>
+		<h1>Hello World</h1>
+		<p>This is my first webpage. <br />I hope you like it.</p>
+		<hr />
+		<p>Another paragraph</p>
+
+		<img src="https://cdn.meme.am/instances/500x/75396241/roll-safe-2-cant-get-a-runtime-error-if-your-code-doesnt-compile.jpg" />
+	</body>
+</html>
